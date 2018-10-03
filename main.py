@@ -11,12 +11,12 @@ import shutil, os, sqlite3, signal, sys
 # import re
 
 api_base_url = "https://botsin.space"
-scopes = ["read:statuses", "read:accounts", "read:follows", "write:statuses"]
+scopes = ["read:statuses", "read:accounts", "read:follows", "write:statuses", "write:media"]
 
 if not path.exists("clientcred.secret"):
 
     print("No clientcred.secret, registering application")
-    Mastodon.create_app("lynnesbian_mastodon_ebooks", api_base_url=api_base_url, to_file="clientcred.secret", scopes=scopes)
+    Mastodon.create_app("lynnesbian_mastodon_ebooks", api_base_url=api_base_url, to_file="clientcred.secret", scopes=scopes, website="https://github.com/Lynnesbian/mastodon-ebooks")
 
 if not path.exists("usercred.secret"):
     print("No usercred.secret, registering application")
