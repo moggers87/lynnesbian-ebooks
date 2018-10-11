@@ -4,9 +4,12 @@ This version makes quite a few changes from [the original](https://github.com/Je
 - Unicode support
 - Non-Markov stuff
 - Meme generation with ImageMagick
+- Stores toots in a sqlite database rather than a text file
+  - Doesn't unecessarily redownload all toots every time
 - its very cute
-
-For an example of what this bot can do, see [this botsin.space account](https://botsin.space/@lynnesbian_ebooks).
+  
+## Install/usage guide
+An installation and usage guide is available for unix-based platforms (linux, macOS...) [here](https://cloud.lynnesbian.space/s/Qxxm2sYdMZaqWat).
 
 ## Original README
 hey look it's an ebooks bot
