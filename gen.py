@@ -4,7 +4,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 from mastodon import Mastodon
-import argparse, sys, traceback
+import argparse, json, sys, traceback
 import create
 
 parser = argparse.ArgumentParser(description='Generate and post a toot.')
